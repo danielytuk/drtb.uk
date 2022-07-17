@@ -1,0 +1,151 @@
+@import url('https://brick.freetls.fastly.net/Poppins:wght@400,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection {
+    background: transparent;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.569);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+h1 {
+    background-image: url(../img/text-bg.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: lowercase;
+    font-size: 120px;
+    margin: 10px 0;
+}
+
+.wrapper {
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.wrapper .parent-tab,
+.wrapper .child-tab {
+    margin-bottom: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.wrapper .parent-tab label,
+.wrapper .child-tab label {
+    background: #123;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    z-index: 99;
+    transition: all 0.3s ease;
+}
+
+.wrapper .parent-tab label:hover {
+    background: #123;
+}
+
+.parent-tab input:checked~label,
+.child-tab input:checked~label {
+    border-radius: 3px 3px 0 0;
+    background: #123;
+}
+
+.wrapper label span {
+    color: rgba(255, 255, 255, 0.569);
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 -1px 1px #123;
+}
+
+.wrapper .child-tab label span {
+    font-size: 17px;
+}
+
+.parent-tab label .icon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    color: #4e59f5;
+    display: block;
+    background: #123;
+    border-radius: 50%;
+    text-shadow: 0 -1px 1px #123;
+}
+
+.wrapper .child-tab label .icon {
+    height: 27px;
+    width: 27px;
+}
+
+.parent-tab label .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent-tab input:checked~label .icon i:before,
+.child-tab input:checked~label .icon i:before {
+    content: '\f068';
+}
+
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content {
+    max-height: 0px;
+    overflow: hidden;
+    background: #123;
+    color: rgba(255, 255, 255, 0.569);
+    border-radius: 0 0 3px 3px;
+    transition: all 0.4s ease;
+}
+
+.parent-tab input:checked~.content,
+.child-tab input:checked~.sub-content {
+    max-height: 100vh;
+}
+
+.tab-3 input:checked~.content {
+    padding: 15px 20px;
+}
+
+.parent-tab .content p,
+.child-tab .sub-content p {
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.child-tab .sub-content p {
+    font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
