@@ -7,13 +7,15 @@
 
     <?php
     /* Copyright ©️ Daniel Richard Todd Back */
-    echo '    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/danielytuk/drtb.uk@prod/css/animation.min.css">';
-    echo '    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/danielytuk/drtb.uk@prod/css/main.min.css">';
-    echo '    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@latest/css/all.min.css" />';
-    echo '    <link rel="dns-prefetch" href="https://assets.pythonastudios.gb.net">';
-    echo '    <link rel="dns-prefetch" href="https://cdn.statically.io">';
-    echo '    <link rel="dns-prefetch" href="https://dytuk.media">';
-    echo '    <link rel="prefetch" href="https://cdn.statically.io/img/drtb.uk/img/d-favi.png">';
+	echo
+	'    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/danielytuk/drtb.uk@prod/css/animation.min.css">
+	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/danielytuk/drtb.uk@prod/css/main.min.css">
+	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@latest/css/all.min.css" />
+	     <link rel="dns-prefetch" href="https://assets.pythonastudios.gb.net">
+	     <link rel="dns-prefetch" href="https://cdn.statically.io">
+	     <link rel="dns-prefetch" href="https://dytuk.media">
+	     <link rel="prefetch" href="https://cdn.statically.io/img/drtb.uk/img/d-favi.png">
+	';
     include_once('./php/header.php');
     ?>
 </head>
